@@ -1,0 +1,153 @@
+<!DOCTYPE html> <html lang="ar" dir="rtl"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>أحمد أثير | روابط التواصل</title> <style> :root { --bg-color: #080b11; --card-bg: rgba(255, 255, 255, 0.03); --card-border: rgba(212, 175, 55, 0.25); --card-border-hover: #d4af37; --text-primary: #ffffff; --accent-gold: #d4af37; }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: radial-gradient(circle at center, #111726 0%, #080b11 100%);
+        color: var(--text-primary);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+    .profile-container {
+        width: 100%;
+        max-width: 430px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .avatar {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #161f33, #0b111e);
+        border: 2px solid var(--accent-gold);
+        box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);
+        margin-bottom: 20px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    h1 {
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        margin: 0 0 8px 0;
+        color: var(--text-primary);
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+    .title {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--accent-gold);
+        letter-spacing: 1px;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+    }
+    .links-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .link-item {
+        background: var(--card-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 14px;
+        padding: 16px 24px;
+        text-decoration: none;
+        color: var(--text-primary);
+        font-size: 15px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+    .link-item:hover:not(.soon) {
+        background: rgba(212, 175, 55, 0.08);
+        border-color: var(--card-border-hover);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(212, 175, 55, 0.15);
+    }
+    /* تنسيق خاص لخانة قريباً */
+    .link-item.soon {
+        opacity: 0.5;
+        cursor: default;
+    }
+    .icon-text {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+    .arrow {
+        font-size: 14px;
+        color: var(--accent-gold);
+        transition: transform 0.3s ease;
+    }
+    .link-item:not(.soon):hover .arrow {
+        transform: translateX(-5px);
+    }
+    .footer {
+        margin-top: 50px;
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.3);
+        letter-spacing: 1px;
+    }
+</style>
+
+</head> <body>
+<div class="profile-container">
+    <div class="avatar">
+        <img src="my_photo.jpg" alt="أحمد أثير">
+    </div>
+    <h1>أحمد أثير</h1>
+    <div class="title">مهندس تقنيات أمن سيبراني</div>
+    <div class="links-wrapper">
+        <a href="https://wa.me/qr/DV4ZWXCC23TQO1" target="_blank" class="link-item">
+            <div class="icon-text">
+                <span style="font-size: 18px; color: #25D366;">⚡️</span>
+                <span>واتساب الأعمال</span>
+            </div>
+            <span class="arrow">←</span>
+        </a>
+        <a href="https://t.me/iZe0si" target="_blank" class="link-item">
+            <div class="icon-text">
+                <span style="font-size: 18px; color: #229ED9;">✈️</span>
+                <span>تليغرام للتواصل</span>
+            </div>
+            <span class="arrow">←</span>
+        </a>
+        <a href="https://www.instagram.com/_4prz?igsh=bHowMG1zZjZ2OGJo" target="_blank" class="link-item">
+            <div class="icon-text">
+                <span style="font-size: 18px; color: #E1306C;">📸</span>
+                <span>إنستغرام</span>
+            </div>
+            <span class="arrow">←</span>
+        </a>
+        <div class="link-item soon">
+            <div class="icon-text">
+                <span style="font-size: 18px; color: #58a6ff;">🎓</span>
+                <span>قناة تعليمية (قريباً)</span>
+            </div>
+            <span style="font-size: 10px; color: var(--accent-gold);">SOON</span>
+        </div>
+    </div>
+    <div class="footer">
+        SECURED & CODED BY ZEUS
+    </div>
+</div>
+
+</body> </html>
